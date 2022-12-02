@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="subtitulo ion-text-wrap">
+      Inicio
+    </ion-title>
+  
+
+    <ion-buttons slot="start">
+      <ion-button (click)="openMenu()">
+        <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/perfil']" >
+        <ion-icon color="primary" slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-content  [fullscreen]="true">
+  <h1 class="titulo-n">Nosotros</h1>
+  <ion-card>
+      <ion-item>
+        <img src="../../../assets/img/yoda.jpg" alt="">
+      </ion-item >
+      <span class="class-nosotros">Javier Hermosilla</span>
+      <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi sint placeat, minima illo vel error maiores id veniam ducimus suscipit facere, ad officia architecto modi mollitia dolore quam doloremque quidem quia voluptatem ullam iure, expedita ex! Fugiat, illum! Voluptatibus voluptates laborum, minima recusandae iure quasi reiciendis. Corporis, quidem dolores?</p>
+  </ion-card>
+  
+  <ion-card>
+    <ion-item>
+      <img src="../../../assets/img/yoda.jpg" alt="">
+    </ion-item>
+ 
+  <span class="class-nosotros">Bastian Barrera</span>
+  <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia alias corporis quibusdam sunt nemo blanditiis impedit molestiae architecto, labore culpa totam nam tenetur iure ex dicta deserunt. Officiis sunt, dolor odit, quos rem repudiandae officia voluptates veritatis at id numquam odio ipsa corporis aspernatur rerum nam repellendus voluptate quis quasi.</p>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <img src="../../../assets/img/yoda.jpg" alt="">
+  </ion-item>
+  <span class="class-nosotros">Mauricio Cabrera</span>
+  <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta necessitatibus inventore rem dolorem corrupti suscipit libero explicabo non sint assumenda cum repellat ullam, numquam qui natus iure tenetur nam vero a quam omnis, blanditiis impedit quae praesentium. Quo eum exercitationem, nobis dolore molestias illo voluptates eveniet praesentium saepe nulla deserunt.</p>
+</ion-card>
+</ion-content>
+</ion-header>
+

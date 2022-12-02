@@ -1,0 +1,34 @@
+.clima {
+    padding: 5px !important;
+    width: 100%;
+}
+
+
+.searchBar {
+    --ion-background-color: #3B7E88;
+    color: #3B7E88;
+}
+
+.cardStyle {
+    border-radius: 20px;
+    --ion-background-color: #3B7E88;
+
+    span {
+        color: white;
+        font-weight: 300;
+    }
+
+    #temp {
+        font-weight: 300;
+        font-size: 4em;
+        margin: 5px;
+    }
+    
+    #locationIcon {
+        color: #F6B844;
+    }
+
+    #date {
+        color: #F6B844;
+    }
+}

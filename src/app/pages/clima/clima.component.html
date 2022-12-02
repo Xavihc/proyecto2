@@ -1,0 +1,76 @@
+
+<ion-header [translucent]="true">
+  
+  <ion-toolbar>
+    <ion-title class="subtitulo ion-text-wrap">
+      Clima
+    </ion-title>
+  
+    <ion-buttons slot="start">
+      <ion-button (click)="openMenu()">
+        <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+ <ion-content [fullscreen]="true">
+   
+  <div style="text-align: center; margin: 15px;">
+    <ion-label style="font-weight: 400; font-size: 1.5em;">Weather Forecast</ion-label>
+  </div>
+  <ion-searchbar [(ngModel)]="cityName" placeholder="Search for city" class="searchBar" animated></ion-searchbar>
+  
+   <ion-card class="cardStyle">
+     <ion-item lines="none">
+       <p style="font-weight: 500; color: white;">Reporte diario</p>
+         <ion-label class="date" slot="end">{{todayDate}}</ion-label>
+      </ion-item>
+      
+      
+      <ion-item lines="none">
+        <span id="temp">
+          {{(weatherTemp?.temp - 273.15).toFixed(0)}}         
+        </span>
+        <span style="font-size: 2em; font-weight: bold; color: #F6B844; margin-bottom: 25px;">º</span>
+        <img slot="end" width="180px" height="180px" [src]="weatherIcon" alt="">
+      </ion-item>
+
+      <ion-item>     
+          <ion-icon id="locationIcon" name="location"></ion-icon>
+          <span>{{cityName}}</span>   
+      </ion-item>
+
+    </ion-card>
+
+    <ion-card class="cardStyle">
+      <ion-item lines="none">
+        <span>Maxima temperatura</span>
+  
+          <span slot="end">
+            {{(weatherTemp?.temp - 273.15).toFixed(0)}}º
+          </span>
+          
+    
+      </ion-item>
+
+      <ion-item lines="none">
+        <span>Temperatura minima</span>
+        <span slot="end">
+          {{(weatherTemp?.temp_max - 273.15).toFixed(0)}}º
+        </span>
+        
+      </ion-item>
+
+      <ion-item lines="none">
+        <span>humedad</span>
+        <span slot="end">
+          {{(weatherTemp?.humidity).toFixed(0)}}º
+        </span>
+        
+      </ion-item>
+    </ion-card>
+
+  </ion-content>
+
+</ion-header>
