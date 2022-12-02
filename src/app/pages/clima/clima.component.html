@@ -48,7 +48,7 @@
         <span>Maxima temperatura</span>
   
           <span slot="end">
-            {{(weatherTemp?.temp - 273.15).toFixed(0)}}º
+            {{(weatherTemp?.temp_max - 273.15).toFixed(0)}}º
           </span>
           
     
@@ -57,7 +57,7 @@
       <ion-item lines="none">
         <span>Temperatura minima</span>
         <span slot="end">
-          {{(weatherTemp?.temp_max - 273.15).toFixed(0)}}º
+          {{(weatherTemp?.temp_min - 273.15).toFixed(0)}}º
         </span>
         
       </ion-item>
